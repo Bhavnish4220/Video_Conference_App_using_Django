@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Dashboard - Video Conference{% endblock %}
+
+{% block content %}
+<div class="dashboard mt-4 text-center">
+  <h1>Welcome, {{ name }}!</h1>
+  <div class="d-flex justify-content-center gap-2 mt-3">
+    <a href="{% url 'meeting' %}" class="button">New Meeting</a>
+  <a href="{% url 'join_room' %}" class="button">Join Meeting</a>
+  <a href="{% url 'logout' %}" class="button">Logout</a> 
+  </div>
+</div>
+{% endblock %}
+
+
+
